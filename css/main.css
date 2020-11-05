@@ -842,21 +842,21 @@ img {
   transition: transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55), border-color 0.2s, -webkit-transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55);
 }
 .teacher-photo__1 {
-  background-image: url(../../image/teachers/teacher-1-2-m_DSCF6169.jpg);
+  background-image: url(../image/teachers/teacher-1_m_DSCF6169.jpg);
 }
 .teacher-photo__2 {
-  background-image: url(../../image/teachers/teacher-2-2-n_DSCF5939.jpg);
+  background-image: url(../image/teachers/teacher-2_n_DSCF5939.jpg);
 }
 .teacher-photo__3 {
-  background-image: url(../../image/teachers/teacher-3_DSCF1683.jpg);
+  background-image: url(../image/teachers/teacher-3_DSCF1683.jpg);
 }
 .teacher-photo__4 {
-  background-image: url(../../image/teachers/teachers-4_2020-07-08_12-46-58.jpg);
+  background-image: url(../image/teachers/teachers-4_124658.jpg);
 }
 .about {
   padding-top: 40px;
   padding-bottom: 30px;
-  background-image: url(../../image/about/about-bg.jpg);
+  background-image: url(../image/about/about-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
