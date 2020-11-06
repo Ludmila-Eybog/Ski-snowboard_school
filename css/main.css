@@ -341,23 +341,26 @@ img {
   }
 }
 .header-content {
+  margin: 0 15px;
+  width: 240px;
   position: absolute;
   z-index: 4;
 }
 @media (min-width: 768px) {
   .header-content {
     margin-left: 30px;
+    width: 400px;
   }
 }
 @media (min-width: 1200px) {
   .header-content {
     margin-left: 0;
+    width: 645px;
   }
 }
 .motto {
-  margin-bottom: 110px;
-  width: 280px;
-  font-size: 14px;
+  margin-bottom: 80px;
+  font-size: 16px;
   font-family: "Muli";
   color: #fefefe;
   line-height: 1.5;
@@ -365,14 +368,12 @@ img {
 @media (min-width: 768px) {
   .motto {
     margin-bottom: 180px;
-    width: 400px;
     font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
   .motto {
     margin-bottom: 47px;
-    width: 645px;
     font-size: 24px;
   }
 }
@@ -1066,14 +1067,14 @@ img {
 }
 .testimonial__user-photo::before {
   position: absolute;
-  content: url(../../image/testimonials/quote-left.png);
+  content: url(../image/testimonials/quote-left.png);
   left: -63px;
   bottom: 51px;
   z-index: 3;
 }
 .testimonial__user-photo::after {
   position: absolute;
-  content: url(../../image/testimonials/quote-right.png);
+  content: url(../image/testimonials/quote-right.png);
   right: -63px;
   bottom: 51px;
   z-index: 3;
