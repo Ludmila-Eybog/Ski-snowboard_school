@@ -15,60 +15,73 @@
 }
 
 .teachers-row {
+    margin: 0 auto;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: 480px) {
         margin-top: 40px;
+        width: 440px;
         flex-direction: row;
+        justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+
+    @media (min-width: 768px) {
+        width: 600px;
+        justify-content: center;
     }
 
     @media (min-width: 1200px) {
         margin-top: 52px;
+        width: 100%;
         flex-wrap: unset;
         justify-content: space-between;
     }
 }
 
 .teacher {
-    // margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    @media (min-width: 480px) {
+        // margin: 0 15px;
+    }
+
     @media (min-width: 768px) {
-        // margin-bottom: 0;
+        margin: 0 30px;
 
-        &:nth-child(2n+1) {
-            margin-left: 85px;
-            margin-right: 28px;
-        }
+        // &:nth-child(2n+1) {
+        //     margin-left: 85px;
+        //     margin-right: 28px;
+        // }
 
-        &:nth-child(2n) {
-            margin-left: 28px;
-            margin-right: 85px;
-        }
+        // &:nth-child(2n) {
+        //     margin-left: 28px;
+        //     margin-right: 85px;
+        // }
     }
 
     @media (min-width: 1200px) {
+        margin: 0;
 
-        &:nth-child(2n+1) {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
+        // &:nth-child(2n+1) {
+        //     margin-left: 0px;
+        //     margin-right: 0px;
+        // }
 
-        &:nth-child(2n) {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
+        // &:nth-child(2n) {
+        //     margin-left: 0px;
+        //     margin-right: 0px;
+        // }
     }
 }
 
 .teacher-photo {
     position: relative;
-    // display: inline-block;
     display: block;
     margin-bottom: 15px;
     width: 200px;
@@ -102,12 +115,9 @@
         width: 240px;
         height: 240px;
     }
-
-    @media (min-width: 1200px) {}
 }
 
 .teacher-photo:hover::after {
-    // border: 6px solid #69b1ce;
     border: 6px solid #9eb4cd;
     transform: scale(1.15);
     transition: transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55), border-color 0.2s;
@@ -118,7 +128,6 @@
 }
 
 .teacher-photo__2 {
-    // background-image: url(../../image/teachers-1/teacher-2-1_DSCF5939.jpg);
     background-image: url(../image/teachers/teacher-2_n_DSCF5939.jpg);
 }
 
@@ -127,6 +136,5 @@
 }
 
 .teacher-photo__4 {
-    // background-image: url(../../image/teachers-1/teacher-4_PICT6015.jpg);
     background-image: url(../image/teachers/teachers-4_124658.jpg);
 }

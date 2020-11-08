@@ -20,7 +20,7 @@
     const overlayElement = document.querySelector('[data-overlay]')
     const mobileMenuToggle = document.querySelector('[data-nav-menu-toggle]')
     console.log('mobileMenuToggle= ',mobileMenuToggle)
-    const mobileMenu = document.querySelector('.mobile-nav')
+    const mobileMenu = document.querySelector('.nav-mobile')
 
     mobileMenuToggle.addEventListener('click', function () {
         if (this.classList.contains('active')) {

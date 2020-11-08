@@ -1,9 +1,5 @@
 .contacts {
     background-color: #2f2f2f;
-
-    @media (min-width: 1200px) {
-    // overflow: hidden;
-    }
 }
 
 .col-left {
@@ -34,12 +30,7 @@
 
     @media (min-width: 768px) {
         margin-left: 5px;
-        // text-align: center;
     }
-
-    // @media (min-width: 1200px) {
-    //     text-align: left;
-    // }
 }
 
 // ----    list    ----
@@ -107,8 +98,26 @@
 }
 
 .contacts-list_desc a {
+    position: relative;
     color: #f7f7f7;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -1px;
+        width: 0%;
+        height: 1px;
+        background-color: #ffffff;
+    }
+
+    &:hover::after {
+        width: 100%;
+        transition: .2s;
+    }
 }
+
+// ----  End  list    ----
 
 .lower {
     text-transform: lowercase;
@@ -141,5 +150,9 @@
         background-position: right;
     }
 
-    @media (min-width: 1200px) {}
+    @media (min-width: 1200px) {
+        width: 150%;
+    }
 }
+
+
