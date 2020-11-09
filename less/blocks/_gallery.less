@@ -27,15 +27,20 @@
     margin-bottom: 10px;
     width: 100%;
     max-width: 640px;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 
     @media (min-width: 768px) {
         margin-bottom: 0;
+    }
 
+    @media (min-width: 1200px) {
+       
         &:hover {
-            // width: 350px;
-
-            // position: absolute;
-            // z-index: 20;
+            transform: none;
         }
     }
 }
