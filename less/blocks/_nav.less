@@ -1,5 +1,4 @@
-.nav-top {
-    display: flex;
+.nav {
     padding-top: 30px;
     padding-bottom: 40px;
 
@@ -9,9 +8,16 @@
     }
 
     @media (min-width: 1200px) {
-        justify-content: space-between;
         padding-top: 34px;
         padding-bottom: 72px;
+    }
+}
+
+.nav-top {
+    display: flex;
+
+    @media (min-width: 1200px) {
+        justify-content: space-between;
         // letter-spacing: 2px;
     }
 }
@@ -31,9 +37,8 @@
         // transform: scale(1);
     }
 
-    @media (min-width: 1200px) {
-        width: 100%;
-    }
+    // @media (min-width: 1200px) {
+    // }
 }
 
 // ---  Навигация для десктопа

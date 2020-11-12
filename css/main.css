@@ -74,6 +74,7 @@ img {
 }
 @media (min-width: 1200px) {
   .container-big {
+    padding: 0;
     max-width: 1680px;
   }
 }
@@ -231,26 +232,32 @@ img {
     font-size: 24px;
   }
 }
-.nav-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav {
   padding-top: 30px;
   padding-bottom: 40px;
 }
 @media (min-width: 768px) {
-  .nav-top {
+  .nav {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+}
+@media (min-width: 1200px) {
+  .nav {
+    padding-top: 34px;
+    padding-bottom: 72px;
+  }
+}
+.nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (min-width: 1200px) {
   .nav-top {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 34px;
-    padding-bottom: 72px;
   }
 }
 .logo {
@@ -261,11 +268,6 @@ img {
   width: 80%;
 }
 @media (min-width: 768px) {
-  .logo img {
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
   .logo img {
     width: 100%;
   }
@@ -535,6 +537,11 @@ img {
             box-shadow: rgba(254, 254, 254, 0.3) 0px 8px 15px 0px;
   }
 }
+@media (min-width: 1200px) {
+  .button-header {
+    padding: 15px 45px;
+  }
+}
 .button-offer {
   padding: 13px 22px;
   background-color: #ff690f;
@@ -555,8 +562,12 @@ img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+#backTop a {
+  display: none;
+}
 @media (min-width: 1200px) {
   #backTop a {
+    display: block;
     color: #ff600a;
     position: fixed;
     right: 40px;
@@ -1051,7 +1062,7 @@ img {
 @media (min-width: 1200px) {
   .testimonials {
     padding-top: 157px;
-    padding-bottom: 145 px;
+    padding-bottom: 145px;
   }
 }
 .testimonial {
@@ -1176,7 +1187,7 @@ img {
 }
 @media (min-width: 768px) {
   .title-2_footer {
-    margin-left: 5px;
+    margin-left: 0px;
   }
 }
 .contacts-list {
@@ -1198,7 +1209,7 @@ img {
 @media (min-width: 1200px) {
   .contacts-list {
     margin-bottom: 65px;
-    padding-left: 48px;
+    padding-left: 45px;
   }
 }
 .contacts-list_item {
@@ -1284,7 +1295,7 @@ img {
 }
 @media (min-width: 1200px) {
   .map {
-    width: 150%;
+    width: 100%;
   }
 }
 .social-icons {
@@ -1298,7 +1309,7 @@ img {
 }
 @media (min-width: 768px) {
   .social-icons {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 .social-icons-item svg {
